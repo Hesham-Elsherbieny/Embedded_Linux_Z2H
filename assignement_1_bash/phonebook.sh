@@ -4,7 +4,6 @@
 clear
 
 
-
 if [ ! -d /etc/phonebook ]
 then
 	cd /etc
