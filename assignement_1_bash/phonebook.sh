@@ -1,19 +1,19 @@
-
 #!/bin/bash 
 
 clear
 
 
-if [ ! -d /etc/phonebook ]
+
+if [ ! -d ~/phonebook ]
 then
-	cd /etc
-	sudo mkdir phonebook
-	cd /etc/phonebook
-	sudo touch phonebookDB.txt
+	cd ~
+	mkdir phonebook
+	cd ~/phonebook
+	touch phonebookDB.txt
+else
+	cd ~/phonebook
 fi
-cd /etc
-sudo chmod -R 777 /etc/phonebook;
-cd phonebook
+
 
 if [[ $# -eq 0 ]]
 then
